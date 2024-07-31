@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 미디어 요소</title>
+</head>
+
+<body>
+  <!-- <audio></audio> : 웹 페이지에서 오디오 컨텐츠를 재생할 수 있도록 함-->
+  <!-- <source/> : 미디어 파일을 지정 -->
+  <!-- controls 속성 : 미디어에 컨트롤러를 추가 -->
+  <!-- autooplay 속성 : 자동 실행 (단, muted가 되어있는 상태일 때만 적용됨) -->
+  <!-- muted 속성 : 음소거 -->
+  <audio controls muted autoplay>
+    <source src="./sample.mp3" type="audio/mpeg" />
+    브라우저가 audio 요소를 지원하지 않으면 이 메시지가 나타납니다.
+  </audio>
+
+  <!-- <video></video> : 웹 페이지에 비디오 컨텐츠를 재생할 수 있도록 함 -->
+
+  <video controls muted autoplay>
+    <source src="./sample.mp4" type="video/mp4" />
+    브라우저가 video 요소를 지원하지 않으면 이 메시지가 나타납니다.
+  </video>
+</body>
+
+</html>
