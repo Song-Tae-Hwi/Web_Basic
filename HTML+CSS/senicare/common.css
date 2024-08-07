@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @font-face {
   font-family: 'Pretendard';
@@ -8,12 +8,12 @@
 }
 
 :root {
-  --priamry-color: rgba(0, 192, 122, 1);
+  --primary-color: rgba(0, 191, 122, 1);
   --primary-10-color: rgba(0, 191, 122, 0.1);
   --primary-20-color: rgba(0, 191, 122, 0.2);
   --error-color: rgba(255, 84, 64, 1);
   --gray-color: rgba(138, 146, 166, 1);
-  --dark-gary-color: rgba(64, 64, 64, 1);
+  --dark-gray-color: rgba(64, 64, 64, 1);
   --default-color: rgba(35, 45, 66, 1);
 }
 
@@ -29,15 +29,14 @@ body {
 }
 
 .input-box .label {
-  color: var(--gray-color);
   font-size: 16px;
   font-weight: 400;
+  color: var(--gray-color);
 }
 
 .input-box .input-area {
   display: flex;
   gap: 10px;
-  align-items: center;
 }
 
 .input-box input {
@@ -76,14 +75,14 @@ input::placeholder {
   text-align: center;
 }
 
-.input-buttton.disable {
+.input-button.disable {
   background-color: rgba(238, 238, 238, 1);
   color: var(--gray-color);
 }
 
 .input-button.active {
   background-color: var(--primary-10-color);
-  color: var(--priamry-color);
+  color: var(--primary-color);
 }
 
 .input-button.active:hover {
@@ -94,6 +93,7 @@ input::placeholder {
 .input-box .message {
   margin-top: -4px;
   height: 16px;
+
   font-size: 13px;
   font-weight: 400;
 }
@@ -103,7 +103,7 @@ input::placeholder {
 }
 
 .message.primary {
-  color: var(--priamry-color);
+  color: var(--primary-color);
 }
 
 .button {
@@ -114,16 +114,17 @@ input::placeholder {
   font-weight: 400;
   line-height: 175%;
   text-align: center;
+
   color: rgba(255, 255, 255, 1);
 }
 
 .button:hover {
-  opacity: 0.8;
-  cursor: pointer
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .button.primary {
-  background-color: var(--priamry-color);
+  background-color: var(--primary-color);
 }
 
 .button.disable {
@@ -141,11 +142,12 @@ input::placeholder {
 }
 
 .link {
+  align-self: center;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 175%;
 
-  align-self: center;
   color: rgba(113, 113, 113, 1);
 }
 
@@ -156,7 +158,6 @@ input::placeholder {
 
 .divider {
   width: 100%;
-
   border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
